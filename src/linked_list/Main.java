@@ -43,7 +43,7 @@ public class Main {
         list1.toArray1();
         list1.set(3,25);
         list1.showList();
-
+        list1.copy();
 
     }
 }

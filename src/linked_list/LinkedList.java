@@ -236,4 +236,14 @@ public class LinkedList<T> {
 
         temp.data = data;
     }
+    public LinkedList<T> copy() {
+        LinkedList<T> copyList = new LinkedList<>();
+        Node<T> temp = head;
+        while (temp != null) {
+            copyList.add(temp.data);
+            temp = temp.next;
+        }
+        return copyList;
+    }
+
 }
